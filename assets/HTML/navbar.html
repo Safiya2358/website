@@ -1,0 +1,88 @@
+<!-- CSS File -->
+<link rel="stylesheet" type="text/CSS" href="../assets/CSS/styles.css" />
+
+<!-- Pre-Navigation Bar -->
+<div class="pre-nav">
+  <!-- Contact Details -->
+  <a href="#" class="pre-nav-icons m-3" title="Email"
+    ><i class="fa-solid fa-envelope p-2"></i>alumni@admin.nitdgp.ac.in</a
+  >
+  <a href="#" class="pre-nav-icons" title="Call"
+    ><i class="fa-solid fa-phone p-2"></i>+999 999 999</a
+  >
+
+  <!-- Social Media Icons -->
+  <a href="#"
+    ><i class="fa-brands fa-linkedin nav-social-media" title="LinkedIn"></i
+  ></a>
+  <a href="#"
+    ><i class="fa-brands fa-instagram nav-social-media" title="Instagram"></i
+  ></a>
+  <a href="#"
+    ><i class="fa-brands fa-twitter nav-social-media" title="Twitter"></i
+  ></a>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="container-fluid nav-bar">
+  <!-- Nav Logo -->
+  <a href="/"
+    ><img src="../assets/img/Logo.jpg" class="nav-img" height="70px"
+  /></a>
+
+  <!-- Nav Labels -->
+  <a href="/"
+    ><label class="nav-label"
+      >Center for Alumni Affairs &International Relations</label
+    ></a
+  >
+  <a href="/"><label class="mini-label">NIT DURGAPUR</label></a>
+
+  <!-- Nav Links -->
+  <ul class="nav-items">
+    <li><a href="/" class="nav-link home">home</a></li>
+    <div class="dropdown">
+      <button class="dropbtn nav-link">
+        Initiatives
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+          fill="currentColor"
+          class="bi bi-caret-down-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+          />
+        </svg>
+      </button>
+      <div class="dropdown-content">
+        <a href="/academics" class="drop-link" </a>
+        <a href="https://sac.alumnitdgp.in/stamp_html.php" class="drop-link"> STUDENT ALUMNI MENTORSHIP PROGRAM (StAMP)</a>
+        <a href="https://sac.alumnitdgp.in/aim_html.php" class="drop-link">Alumni Internship Mentorship (AIM)</a>
+        <a href="" class="drop-link">NITDian branding</a>
+        <a href="#" class="drop-link">NITDian brand store</a>
+        <a href="#" class="drop-link">NITDian campus tour</a>
+      </div>
+    </div>
+    
+    <li><a href="#" class="nav-link">societies</a></li>
+    <li><a href="https://nitdgp.ac.in/acad/promotion" class="nav-link">news</a></li>
+    <li><a href="mailto:alumni@admin.nitdgp.ac.in?subject=Contact%20Us" class="nav-link">contact</a></li>
+  </li>
+</ul>
+  
+</nav>
+
+<!-- Script tag to disappear the Pre-Navigation on-scroll -->
+<script>
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 1) {
+      $(".nav-bar").addClass("nav-scroll");
+      console.log("OK");
+    } else {
+      $(".nav-bar").removeClass("nav-scroll");
+    }
+  });
+</script>
